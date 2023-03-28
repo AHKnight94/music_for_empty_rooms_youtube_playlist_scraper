@@ -5,7 +5,7 @@ import pprint
 #################################################################################################
 # Keys and IDs
 api_key=''
-channel='UCY8_y20lxQhhBe8GZl5A9rw' # Music for empty rooms
+channel='' # channelId
 
 #################################################################################################
 # Set Up
@@ -16,6 +16,7 @@ youtube=build('youtube','v3',developerKey=api_key)
 #################################################################################################
 # Functions
 
+###
 # Gets descriptive statistics for YouTube videos using the search method
 # Returns a tuple containing lists (titles, publish dates, and IDs)
 def get_video():
@@ -45,7 +46,7 @@ def get_video():
         publishDate.append(item['snippet']['publishedAt'])
     return videoId,title,publishDate
 
-
+###
 # Gets numerical statistics for videos 
 # Returns these values as a tuple containing lists (duration, viewCount, likeCount, commentCount)
 def get_video_stats(videoId):
