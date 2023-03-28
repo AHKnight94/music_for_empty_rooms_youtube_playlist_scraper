@@ -4,7 +4,7 @@ import pprint
 
 #################################################################################################
 # Keys and IDs
-api_key='AIzaSyDn9VFpVNNUW9SNOS4FSBNe1tRI7nkzBcM'
+api_key=''
 channel='UCY8_y20lxQhhBe8GZl5A9rw' # Music for empty rooms
 
 #################################################################################################
